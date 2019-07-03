@@ -1,0 +1,52 @@
+:global * {
+  box-sizing: border-box;
+}
+
+:global html {
+  font-size: 62.5%;
+  overflow-y: scroll;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--sans-serif);
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--serif);
+}
+
+a {
+  color: var(--ga-red);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--ga-burgundy);
+}
+
+a:visited {
+  color: var(--shade-black);
+}
+
+img,
+svg {
+  display: block;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+p {
+  margin-top: 0;
+}

@@ -12,7 +12,7 @@ const config: webpack.Configuration = {
   entry: './src/index.ts',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, '../build'),
+    path: path.resolve(__dirname, '../docs'),
   },
   mode: 'production',
   resolve: {
@@ -36,6 +36,11 @@ const config: webpack.Configuration = {
       title: 'GA FEWD Assets',
       filename: 'index.html',
       template: 'src/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Random year picker',
+      filename: 'random-year/index.html',
+      template: 'src/random-year/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

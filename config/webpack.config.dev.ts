@@ -10,7 +10,7 @@ const config: webpack.Configuration = {
   entry: './src/index.ts',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../docs'),
   },
   devtool: 'inline-source-map',
   resolve: {
@@ -32,9 +32,14 @@ const config: webpack.Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: '¡Gracias totales!',
+      title: '¡FEWD asssets!',
       filename: 'index.html',
       template: 'src/index.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Random year picker',
+      filename: 'random-year/index.html',
+      template: 'src/random-year/index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',

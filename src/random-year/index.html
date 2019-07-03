@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body class="page">
+  <body class="page random-year">
     <header>
       <picture>
         <img
@@ -16,18 +16,16 @@
     </header>
     <main>
       <h1>
-        Welcome to FEWD assets
+        Random year picker
       </h1>
       <section>
-        <h2>Directory</h2>
-        <nav>
-          <ul>
-            <li>
-              <a href="./random-year/index.html">Random year</a>
-            </li>
-          </ul>
-        </nav>
+        <form action="/" id="js-form">
+          <label for="years">Select your birth year</label>
+          <select name="years" id="years"> </select>
+          <input type="submit" value="enter" />
+        </form>
       </section>
+      <p id="js-random-year" class="random-year__display"></p>
     </main>
   </body>
 </html>
