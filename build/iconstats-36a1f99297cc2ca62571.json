@@ -1,0 +1,13 @@
+{
+  "outputFilePrefix": "icons-16c07c36279566c51b93bacf0d1efcbd/",
+  "html": [
+    "<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"icons-16c07c36279566c51b93bacf0d1efcbd/favicon-32x32.png\">",
+    "<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"icons-16c07c36279566c51b93bacf0d1efcbd/favicon-16x16.png\">",
+    "<link rel=\"shortcut icon\" href=\"icons-16c07c36279566c51b93bacf0d1efcbd/favicon.ico\">"
+  ],
+  "files": [
+    "icons-16c07c36279566c51b93bacf0d1efcbd/favicon-16x16.png",
+    "icons-16c07c36279566c51b93bacf0d1efcbd/favicon-32x32.png",
+    "icons-16c07c36279566c51b93bacf0d1efcbd/favicon.ico"
+  ]
+}

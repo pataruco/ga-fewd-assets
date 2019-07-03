@@ -1,0 +1,12 @@
+.page header {
+  background-color: black;
+  padding: var(--base-space);
+}
+.page header picture {
+  display: block;
+  width: 12.5%;
+}
+
+.page main {
+  padding: var(--base-space);
+}
