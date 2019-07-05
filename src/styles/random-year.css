@@ -1,6 +1,10 @@
-.random-year section {
-  max-width: 50%;
+.random-year main {
+  max-width: 20rem;
   margin: 0 auto;
+}
+
+.random-year h1 {
+  text-align: center;
 }
 
 .random-year input,
@@ -10,50 +14,58 @@
   margin-bottom: 1.5rem;
 }
 
-:root {
-  --radius: 2px;
-  --baseFg: dimgray;
-  --baseBg: white;
-  --accentFg: #006fc2;
-  --accentBg: #bae1ff;
-}
-
 .random-year select {
-  font: 400 12px/1.3 sans-serif;
   -webkit-appearance: none;
   appearance: none;
-  color: var(--baseFg);
-  border: 1px solid var(--baseFg);
+  background-color: var(--white);
+  background-image: linear-gradient(var(--black), var(--black)),
+    linear-gradient(-135deg, transparent 50%, var(--white) 50%),
+    linear-gradient(-225deg, transparent 50%, var(--white) 50%),
+    linear-gradient(var(--white) 42%, var(--black) 42%);
+  background-position: right 24px center, right bottom, right bottom,
+    right bottom;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 2px 100%, 24px 22px, 22px 24px, 24px 100%;
+  border-radius: var(--radius);
+  border: 2px solid var(--black);
+  display: block;
   line-height: 1;
   outline: 0;
   padding: 0.65em 2.5em 0.55em 0.75em;
-  border-radius: var(--radius);
-  background-color: var(--baseBg);
-  background-image: linear-gradient(var(--baseFg), var(--baseFg)),
-    linear-gradient(-135deg, transparent 50%, var(--accentBg) 50%),
-    linear-gradient(-225deg, transparent 50%, var(--accentBg) 50%),
-    linear-gradient(var(--accentBg) 42%, var(--accentFg) 42%);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
-  background-position: right 20px center, right bottom, right bottom,
-    right bottom;
+  width: 100%;
 }
 
 .random-year select:hover {
-  background-image: linear-gradient(var(--accentFg), var(--accentFg)),
-    linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
-    linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
-    linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
+  background-image: linear-gradient(var(--black), var(--black)),
+    linear-gradient(-135deg, transparent 50%, var(--black) 50%),
+    linear-gradient(-225deg, transparent 50%, var(--black) 50%),
+    linear-gradient(var(--black) 42%, var(--white) 42%);
 }
 
 .random-year select:active {
-  background-image: linear-gradient(var(--accentFg), var(--accentFg)),
-    linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
-    linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
-    linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
-  color: var(--accentBg);
-  border-color: var(--accentFg);
-  background-color: var(--accentFg);
+  background-image: linear-gradient(var(--black), var(--black)),
+    linear-gradient(-135deg, transparent 50%, var(--black) 50%),
+    linear-gradient(-225deg, transparent 50%, var(--black) 50%),
+    linear-gradient(var(--black) 42%, var(--white) 42%);
+  color: var(--white);
+  border-color: var(--black);
+  background-color: var(--black);
+}
+
+.random-year input[type='submit'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--white);
+  border: 2px solid var(--black);
+  color: var(--black);
+  padding: 0.65em 0.75em;
+}
+
+.random-year input[type='submit']:active,
+.random-year input[type='submit']:focus,
+.random-year input[type='submit']:hover {
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .random-year__display {
