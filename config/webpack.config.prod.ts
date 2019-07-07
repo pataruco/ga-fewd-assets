@@ -50,7 +50,7 @@ const config: webpack.Configuration = {
       logo: favicon,
       emitStats: true,
       statsFilename: 'iconstats-[hash].json',
-      title: 'Gracias totales',
+      title: 'GA FEWD Assets',
       icons: {
         android: false,
         appleIcon: false,
