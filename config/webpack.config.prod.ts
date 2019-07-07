@@ -42,6 +42,11 @@ const config: webpack.Configuration = {
       filename: 'random-year/index.html',
       template: 'src/random-year/index.html',
     }),
+    new HtmlWebpackPlugin({
+      title: 'Press release',
+      filename: 'press-release/index.html',
+      template: 'src/press-release/index.html',
+    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: './[name].css',
