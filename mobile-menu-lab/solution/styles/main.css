@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --base-font-size: 16px;
+  --base-space: 1.25rem;
+}
+a {
+  color: black;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: var(--base-font-size);
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.column {
+  flex-basis: 100%;
+}
+
+header {
+  border: 2px solid blue;
+  background-color: lightblue;
+  padding: var(--base-space);
+}
+
+header.row {
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header > a {
+  display: none;
+}
+
+header nav {
+  align-self: center;
+}
+
+header h1.column,
+header nav.column {
+  flex-basis: 33.33%;
+}
+
+header ul.row {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+header ul li.column {
+  flex-basis: 20%;
+}
+
+.content {
+  flex: 1;
+}
+
+.content main {
+  flex-basis: 75%;
+  border: 1px solid red;
+  background-color: pink;
+  padding: var(--base-space);
+}
+
+.content aside {
+  flex-basis: 25%;
+  border: 1px solid green;
+  background-color: lightgreen;
+  padding: var(--base-space);
+}
+
+.articles .column {
+  flex-basis: 25%;
+  padding: 0 var(--base-space);
+}
+
+article picture {
+  display: block;
+  width: 33%;
+  float: left;
+  margin-right: 10px;
+}
+
+footer {
+  border: 1px solid orange;
+  background: yellow;
+  padding: var(--base-space);
+}
+
+menu {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  left: 140%;
+  margin: 0;
+  padding: var(--base-space);
+  position: fixed;
+  top: 0;
+  transition: all 400ms ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 100;
+}
+
+menu > a {
+  display: block;
+  margin-bottom: var(--base-space);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: initial;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header > a {
+    align-self: center;
+    display: block;
+  }
+
+  body.menu-open menu {
+    left: 80%;
+    visibility: visible;
+  }
+
+  .content.row,
+  .articles.row {
+    flex-direction: column;
+  }
+
+  .articles .column {
+    padding: 0;
+  }
+}
